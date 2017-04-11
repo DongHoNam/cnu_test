@@ -45,13 +45,13 @@ public class RiotApiController {
 //        Map<String, Object> parsedMap = new JacksonJsonParser().parseMap(response);
         Date date = new Date();
         AppController appController = new AppController();
-        String[] eval = {summonerName, };
+//        String[] eval = {summonerName, };
 //        parsedMap.forEach((key, value) -> log.info(String.format("key [%s] type [%s] value [%s]", key, value.getClass(), value)));
 
 //        Map<String, Object> summonerDetail = (Map<String, Object>) parsedMap.values().toArray()[0];
         int queriedId = 5;
         long queriedNow = date.getTime();
-        double queriedResult = appController.run(eval);
+        double queriedResult = appController.run(summonerName);
         
         Summoner summoner = new Summoner(queriedId, queriedNow, queriedResult);
 

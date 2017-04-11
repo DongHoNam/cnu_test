@@ -27,13 +27,13 @@ public class AppController {
 		}
 	}
 	
-	public double run(String[] args){
+	public double run(String args){
 		//print start the program
 		//this.appView.outputMessage(MessageID.NOTICESTARTPROGRAM);
 		//create Calculate instance
 		this.calclulate = new Calculate();
 		//save args infix's order
-		this.calclulate.setInfix(args[0]);
+		this.calclulate.setInfix(args);
 		//finish calculate and print result
 		return this.evalExpression();
 		//print program is over

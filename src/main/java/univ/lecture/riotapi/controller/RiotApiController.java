@@ -37,7 +37,7 @@ public class RiotApiController {
     private String riotApiKey;
 
     @RequestMapping(value = "/calc", method = RequestMethod.POST, produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
-    public @RequestBody Summoner querySummoner(@PathVariable("name") @ResponseBody String summonerName) throws UnsupportedEncodingException {
+    public Summoner querySummoner(@PathVariable("name") String summonerName) throws UnsupportedEncodingException {
         final String url = riotApiEndpoint; //+ "/summoner/by-name/" +
 //                summonerName +
 //                "?api_key=" +

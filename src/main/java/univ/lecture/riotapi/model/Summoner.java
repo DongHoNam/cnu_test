@@ -11,6 +11,13 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public class Summoner {
-    private String name;
-    private int summonerLevel;
+    private int id;
+    private long now;
+    private double result;
+    
+    public Summoner(int queriedId, long queriedNow, double queriedResult){
+    	this.id = queriedId;
+    	this.now = queriedNow;
+    	this.result = queriedResult;
+    }
 }

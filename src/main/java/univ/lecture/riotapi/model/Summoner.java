@@ -15,9 +15,9 @@ public class Summoner {
     private long now;
     private double result;
     
-    public Summoner(int queriedId, long queriedNow, double queriedResult){
-    	this.id = queriedId;
-    	this.now = queriedNow;
-    	this.result = queriedResult;
-    }
+//    public Summoner(int queriedId, long queriedNow, double queriedResult){
+//    	this.id = queriedId;
+//    	this.now = queriedNow;
+//    	this.result = queriedResult;
+//    }
 }
